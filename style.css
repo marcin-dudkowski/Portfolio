@@ -50,6 +50,9 @@ dialog{color:var(--text);background:#0c0e10;border:1px solid #353a3e;box-shadow:
 .case-columns.label{grid-template-columns:1fr 2.3fr;gap:60px;margin:6px 0}
 .case-columns.label h2{text-align:left;font-size:23px;margin:0}
 .case-columns.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+/* Rope Chair drawings: matching square tiles with equal inner margins. */
+.case-columns.three>.case-column>.case-figure>.image-button{position:relative;aspect-ratio:1;background:#fff}
+.case-columns.three>.case-column>.case-figure>.image-button>img{position:absolute;inset:8%;width:84%;height:84%;object-fit:contain}
 .case-columns.four{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
 .case-columns.five{grid-template-columns:repeat(5,minmax(0,1fr));gap:22px}
 .case-columns.five .case-text{font-size:16px;line-height:1.7}
