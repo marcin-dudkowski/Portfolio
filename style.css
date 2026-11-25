@@ -53,6 +53,10 @@ dialog{color:var(--text);background:#0c0e10;border:1px solid #353a3e;box-shadow:
 /* Rope Chair drawings: matching square tiles with equal inner margins. */
 .case-columns.three>.case-column>.case-figure>.image-button{position:relative;aspect-ratio:1;background:#fff}
 .case-columns.three>.case-column>.case-figure>.image-button>img{position:absolute;inset:8%;width:84%;height:84%;object-fit:contain}
+/* Center the drawings within their tiles, accounting for source-image white margins. */
+.case-columns.three>.case-column>.case-figure>.image-button>img[src$="native-front.jpg"]{transform:translate(-3.9744%,7.8205%)}
+.case-columns.three>.case-column>.case-figure>.image-button>img[src$="native-side.jpg"]{transform:translate(-6.2155%,8.4254%)}
+.case-columns.three>.case-column>.case-figure>.image-button>img[src$="native-isometric.jpg"]{transform:translate(2.7981%,5.1095%)}
 .case-columns.four{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
 .case-columns.five{grid-template-columns:repeat(5,minmax(0,1fr));gap:22px}
 .case-columns.five .case-text{font-size:16px;line-height:1.7}
